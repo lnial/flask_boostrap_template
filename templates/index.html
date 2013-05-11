@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">(サービスタイトル)</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">(？？？？)</a></li>
+              <li><a href="logout">(？？？？)</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+ 
+<div class="container">
+
+    <div class="hero-unit">
+        <h2>「{{ tweet }}」</h2>
+        <form action="./" method="POST" style="text-align:center;">
+            <p>
+                <button class="btn btn-primary" type="submit" name="eval" value=1 >1</button>
+                <button class="btn btn-primary" type="submit" name="eval" value=2 >2</button>
+                <button class="btn btn-primary" type="submit" name="eval" value=3 >3</button>
+                <button class="btn btn-primary" type="submit" name="eval" value=4 >4</button>
+                <button class="btn btn-primary" type="submit" name="eval" value=5 >5</button>
+                <input type="hidden" name="tweet_id" value="{{tweet_id}}">
+            </p>
+        </form>
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}
+<!--</body>-->
+<!--</html>-->
